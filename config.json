@@ -1,0 +1,43 @@
+{
+    "_comment": "LiteBans Integration Plugin Config",
+
+    "mysql": {
+        "host":     "0.0.0.0",
+        "port":     3306,
+        "user":     "user",
+        "password": "password",
+        "database": "database_name"
+    },
+
+    "tablePrefix": "litebans_",
+
+    "_rolesComment": [
+        "Discord role IDs allowed per command group.",
+        "  ban    -> /gameban    + /gameunban",
+        "  mute   -> /gamemute   + /gameunmute",
+        "  warn   -> /gamewarn   + /gameunwarn",
+        "  lookup -> /history + /checkalts + /checkban + /checkmute",
+        "Multiple IDs ok — user needs at least ONE.",
+        "Empty array [] = nobody can use those commands.",
+        "Get ID: Discord > Server Settings > Roles > right-click > Copy Role ID"
+    ],
+    "roles": {
+        "ban":    ["ROLE_ID_HERE"],
+        "mute":   ["ROLE_ID_HERE"],
+        "warn":   ["ROLE_ID_HERE"],
+        "lookup": ["ROLE_ID_HERE"]
+    },
+
+    "_logComment": "Channel ID where all actions are logged. Empty string to disable.",
+    "logChannelId": "CHANNEL_ID_HERE",
+
+    "_triggersComment": "Option IDs from config/options.json that trigger auto punishment history on ticket open.",
+    "ticketHistoryTriggers": [
+        "example-ticket"
+    ],
+
+    "historyEmbed": {
+        "color":             "#e74c3c",
+        "maxEntriesPerType": 5
+    }
+}

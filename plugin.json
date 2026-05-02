@@ -1,0 +1,25 @@
+{
+    "name": "LiteBans Integration",
+    "id": "litebans-integration",
+    "version": "1.0.0",
+    "startFile": "index.ts",
+    "supportedVersions": ["OTv4.0.x", "OTv4.1.x", "OTv4.2.x"],
+
+    "enabled": true,
+    "priority": 0,
+    "events": [],
+
+    "npmDependencies": ["mysql2"],
+    "requiredPlugins": [],
+    "incompatiblePlugins": [],
+
+    "details": {
+        "author": "yow.sef",
+        "contributors": [],
+        "shortDescription": "Adds LiteBans MySQL integration: game bans/mutes/warns + auto punishment history in tickets.",
+        "longDescription": "Connects to your LiteBans MySQL database to provide /gameban, /gamewarn, /gamemute, /gameunban, /gameunmute, /gameunwarn commands and automatically posts a player's punishment history in any ticket whose option ID is listed in the trigger list.",
+        "imageUrl": "",
+        "projectUrl": "",
+        "tags": ["litebans", "minecraft", "moderation", "mysql", "punishment"]
+    }
+}
